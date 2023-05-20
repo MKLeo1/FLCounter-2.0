@@ -51,7 +51,7 @@ countLines function returns a tuple containing the number of empty and non-empty
 Before using remember to set up your environment. Install CMake & Gtest. Remember to update GTest lib directory in CMakeLists.txt. 
 
 1. Clone this repository
-2. Go to the build file
+2. Create and go to the build file
 3. Open terminal and build with CMake using: 
     "..cmake"
 then:
