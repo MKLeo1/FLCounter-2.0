@@ -85,21 +85,19 @@ int main(int argc, char **argv)
 
     std::vector<fs::path> paths;
 
-    for (int i = 3; i < argc; ++i)
-    {
-        paths.emplace_back(fs::absolute(argv[i]));
-    }
+    std::transform(argv + 3, argv + argc, paths.begin(), [](const char *args)
+                   { return fs::absolute(args); });
 
     DataInput Input(std::move(extension), std::move(strategy_type), std::move(paths));
 
     StrategyFactory Strategyfatory(Input.strategy_type);
 
     auto Strategy = Strategyfatory.createStrategy(Input.strategy_type);
-    
+
     DataProcessor Processor(Input.extension, std::move(Strategy), Input.paths);
 
     DataOutput Output;
-    
+
     Processor.processStrategy(Output.files_number, Output.num_empty, Output.num_non_empty);
 
     std::cout << Output << "\n";
