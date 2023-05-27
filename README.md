@@ -70,7 +70,7 @@ then:
     Example 3: ./FLCounter .xxx -all /home/user/Desktop
     Example 4: ./FLCounter .xxx -all-r /home/user/Desktop/next/path/somewhere ...  
 
-                     <h2>Important!</h2> 
+<h2>Important!</h2> 
  
   When selecting strategies for all files ("-all" and "-all-r"), you still need to provide a value for argv[1] (extension).
   It will not affect the program's functionality but is necessary for the proper ordering of parameters so you can type for example: "xxx".
