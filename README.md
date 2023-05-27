@@ -39,6 +39,7 @@ countFiles function returns the number of files found in the specified directory
 countLines function returns a tuple containing the number of empty and non-empty lines found in the specified directory and its subdirectories. If the specified path is not a valid directory, the function throws an invalid_argument exception. If the file cannot be opened, the function throws a runtime_error exception.
 
 <h2>Avalible count strategies: </h2>
+
     "-all": operates on all files in the directory
  
     "-all-r": operates on all files in the directory and all subfolders
