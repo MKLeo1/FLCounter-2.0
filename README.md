@@ -4,7 +4,7 @@
 
 FilesLinesCounter 2.0 is a form of exercise to gain practical coding skills and knowledge in the field of C++.
 
-My assumption was to write code that uses good programming practices such as design patterns, smart pointers, clena code etc.
+My assumption was to write code that uses good programming practices such as using design patterns, smart pointers, clean code rules etc.
 
 Tested on GNU/Linux.
 
